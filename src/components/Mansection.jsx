@@ -25,6 +25,7 @@ const Mansection = () => {
         <div className="lines1"><img src={lines1} /></div>
 
     </div>
+    
   )
 }
 
