@@ -725,36 +725,39 @@ header {
   border-radius: 40px;
   padding: 10px;
   padding-inline: 40px;
+  
 }
 .our-team .container .all-btn:hover {
   color: #e7e7e7;
   background-color: black;
+  
 }
-.our-team .team-pic .container {
+.our-team .team-pic .container{
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: center;
   margin-top: -120px;
 }
 @media (max-width: 992px) {
   .our-team .team-pic .container {
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
   }
 }
-.our-team .team-pic .container .ourteam1 img {
+.our-team .team-pic .container {
+  gap: 20px;
   width: 100%;
 }
-.our-team .team-pic .container .ourteam1 img:hover {
+.our-team .team-pic .container  img:hover {
   transform: scale(1.04);
   transition: transform 0.7s;
 }
-.our-team .team-pic .container .ourteam1 .bold {
+.our-team .team-pic .container  .bold {
   font-family: "DM Sans";
   font-size: 22px;
   font-weight: bold;
   margin-top: 16px;
 }
-.our-team .team-pic .container .ourteam1 .thin {
+.our-team .team-pic .container  .thin {
   color: #191919;
   font-family: "Inter";
   font-size: 16px;
@@ -770,45 +773,79 @@ header {
   border-radius: 10px;
   padding: 9px;
   background-color: rgba(142, 142, 142, 0.5);
-  margin-left: -40px;
+  
+}
+.our-team .team-pic .links {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  margin-right: 50px;
 }
 .our-team .team-pic .links .container a:hover {
   background-color: #191919;
 }
-
+.our-client .container .rating .rate .stars i {
+  color: #f94d1c;
+}
 .our-client {
+  display: grid;
+  background-color: #edcf86;
   padding-top: 70px;
   justify-content: center;
+  padding-bottom: 100px;
 }
 .our-client .container {
   justify-content: center;
   align-items: center;
   background-color: #FFFFFF;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
-.our-client .container .reviews-btn {
+.our-client  .reviews-btn {
   color: #F0EFE9;
   background-color: #191919;
   border-radius: 40px;
   padding: 10px;
+  padding-inline: 100px;
+  margin-left: 450px;
+  margin-top: 40px;
+
 }
 .our-client .container .reviews-btn:hover {
   background-color: gray;
 }
-.our-client .container .rating {
-  display: grid;
-}
+
 .our-client .container .rating .rate {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  text-align: center;
+  
 }
 @media (max-width: 992px) {
   .our-client .container .rating .rate {
     grid-template-columns: auto auto;
   }
 }
+.our-client .container .bold {
+  font-family: "DM Sans";
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding-bottom: 50px;
+  text-align: center;
+  
+}
+.our-client .container .thin{
+  color: #F94D1C;
+  font-family: "Inter";
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  
+}
 .our-client .container .rating .rate .stars {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: start;
+
 }
 .our-client .container .rating .rate .bold {
   font-family: "DM Sans";
@@ -820,6 +857,7 @@ header {
   font-family: "Inter";
   font-size: 18px;
   font-weight: 400;
+  
   position: relative;
 }
 .our-client .container .rating .rate .rater {
@@ -839,11 +877,13 @@ header {
 
 .article-news {
   padding-top: 120px;
+  padding-bottom: 100px;
 }
 .article-news .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 @media (max-width: 992px) {
   .article-news .container {
@@ -855,10 +895,17 @@ header {
   .article-news .container {
     display: grid;
     grid-template-columns: auto;
+    
   }
 }
 .article-news .container .thin {
   color: #6A6C71;
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+}
+.article-news .container p {
+  color: #F94D1C;
   font-family: "Inter";
   font-size: 18px;
   font-weight: 400;
@@ -876,6 +923,7 @@ header {
   font-size: 45px;
   font-weight: bold;
   color: #191919;
+  margin-bottom: 90px;
 }
 .article-news .container .bold2 {
   font-family: "DM Sans";
@@ -905,6 +953,7 @@ header {
   padding: 8px;
   background-color: rgba(113, 113, 113, 0.399);
   margin-left: -40px;
+  margin-top: 50px;
 }
 .article-news .links .container a:hover {
   background-color: #191919;
@@ -915,6 +964,7 @@ header {
   padding-top: 118px;
   position: relative;
   z-index: 0;
+  padding-bottom: 118px;
 }
 .bot-searchbar .lines3 img {
   position: absolute;

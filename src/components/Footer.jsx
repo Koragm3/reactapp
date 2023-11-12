@@ -1,5 +1,6 @@
 import React from 'react'
 import Logobot from '@images/Logobot.svg'
+import lines from '@images/lines4.svg'
 const Footer = () => {
   return (
     <>
@@ -37,7 +38,7 @@ const Footer = () => {
                         <div><a href="#">Youtube Playlist</a></div>
                     </div>
                 </div>
-                <div className="lines4"><img src="images/lines4.svg" alt=""/></div>
+                <div className="lines4"><img src={lines}/></div>
             </div>
 
 

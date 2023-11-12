@@ -5,8 +5,8 @@ import Contacts from './views/Contacts'
 function App() {
   return (
     <BrowserRouter>
+    
     <Routes>
-      
       <Route path="/" element={<Home/>}/>
       <Route path="/contacts" element={<Contacts/>}/>
     </Routes>
