@@ -1,10 +1,16 @@
 import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import MyForm from '../components/Form'
+
+
 const Contacts = () => {
+    
+
   return (
     <>
     <Header/>
+    
     <div className="articles">
         <div className="container">
             <div className="pageoptions">
@@ -69,15 +75,7 @@ const Contacts = () => {
             <div className="bold">Leave us a message <br/>
                 for any information.</div>
             <div>
-                <form>
-
-                    <input type="text" id="fname" name="fname" placeholder="Name*"/><br/>
-
-                    <input type="text" id="lname" name="lname" placeholder="Email*"/><br/>
-                    <textarea id="w3review" name="Your message"  placeholder="Your Message*"/> <br/>
-
-                    <button type="submit">Send Message&nbsp;<i className="fa-regular fa-arrow-up-right fa-beat-fade"></i></button>
-                </form>
+                <MyForm/>
             </div>
 
 
